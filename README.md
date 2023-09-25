@@ -15,7 +15,7 @@ Tugas 1
 4. Eksekusi hasil compile berupa file.exe <br> ```./namaprogram```
 
 ### Attention
-Untuk contoh install di atas hanya untuk pengguna Visual Studio Code yang sudah menginstall <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/">MinGW</a> untuk keperluan compile
+Untuk contoh install & compile di atas hanya untuk pengguna Visual Studio Code yang sudah menginstall <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/">MinGW</a> untuk keperluan compile
 
 ### Refference
 Referensi install <a href="https://sourceforge.net/projects/mingw-w64/">MinGW</a> untuk keperluan compile di Visual Studio Code <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=KYxLEDF6kjs">Disini</a>
