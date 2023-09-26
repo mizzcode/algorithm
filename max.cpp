@@ -15,7 +15,7 @@ int main() {
     cin >> y;
 
     cout << "Masukkan Bilangan Ketiga:";
-    cin >>z;
+    cin >> z;
     // percabangan kondisi
     if (x > y && x > z) {
         tertinggi = x;
