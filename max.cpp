@@ -6,7 +6,7 @@ int main() {
     // judul program
     cout << "Program Mencari Bilangan Tertinggi" << endl;
     // declare variable
-    int x, y, z, terbesar;
+    int x, y, z, tertinggi;
     // assign the variable
     cout << "Masukkan Bilangan Pertama:";
     cin >> x;
@@ -18,12 +18,12 @@ int main() {
     cin >>z;
     // percabangan kondisi
     if (x > y && x > z) {
-        terbesar = x;
+        tertinggi = x;
     } else if (y > x && y > z) {
-        terbesar = y;
+        tertinggi = y;
     } else {
-        terbesar = z;
+        tertinggi = z;
     }
-    // display the ouput terbesar
-    cout << "Bilangan terbesar adalah: " << terbesar;
+    // display the ouput tertinggi
+    cout << "Bilangan tertinggi adalah: " << tertinggi;
 }
