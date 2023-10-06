@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mizz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-06 11:29:34 AM"/>
+        <attribute name="created" value="TWl6ejtNSVpaOzIwMjMtMTAtMDY7MTE6MDM6MDAgQU07MjAwNA=="/>
+        <attribute name="edited" value="TWl6ejtNSVpaOzIwMjMtMTAtMDY7MTE6Mjk6MzQgQU07MTsyMTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="h" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <if expression="n &gt; 100">
+                <then>
+                    <assign variable="h" expression="&quot;Maaf! hanya angka 0 - 100 yang bisa di convert ke huruf&quot;"/>
+                </then>
+                <else>
+                    <if expression="n &gt;= 80">
+                        <then>
+                            <assign variable="h" expression="&quot;A&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="n &gt;= 70">
+                                <then>
+                                    <assign variable="h" expression="&quot;B&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="n &gt;= 60">
+                                        <then>
+                                            <assign variable="h" expression="&quot;C&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="n &gt;= 50">
+                                                <then>
+                                                    <assign variable="h" expression="&quot;D&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="h" expression="&quot;E&quot;"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="h" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
