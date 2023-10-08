@@ -1,7 +1,7 @@
 // Algoritma konversi dari angka ke huruf
 
 // deklarasi variabel n untuk integer dan h untuk string
-// masukan input n
+// masukan nilai n
 // membuat kondisi jika n lebih dari 100 maka beri pesan ke user bahwa "angka 0 sampai 100 saja yang bisa di konversi ke huruf" untuk variable h
 // atau jika n lebih dari sama dengan 80 maka beri nilai "A" untuk variable h
 // atau jika n lebih dari sama dengan 70 maka beri nilai "B" untuk variable h
