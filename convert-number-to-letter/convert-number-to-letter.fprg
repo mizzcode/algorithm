@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Mizz"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-10-06 11:29:34 AM"/>
+        <attribute name="saved" value="2023-10-09 11:59:16 AM"/>
         <attribute name="created" value="TWl6ejtNSVpaOzIwMjMtMTAtMDY7MTE6MDM6MDAgQU07MjAwNA=="/>
-        <attribute name="edited" value="TWl6ejtNSVpaOzIwMjMtMTAtMDY7MTE6Mjk6MzQgQU07MTsyMTI3"/>
+        <attribute name="edited" value="TWl6ejtNSVpaOzIwMjMtMTAtMDk7MTE6NTk6MTYgQU07MjsyMTM0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,9 +14,9 @@
             <declare name="n" type="Integer" array="False" size=""/>
             <declare name="h" type="String" array="False" size=""/>
             <input variable="n"/>
-            <if expression="n &gt; 100">
+            <if expression="n &gt; 100 || n &lt; 0">
                 <then>
-                    <assign variable="h" expression="&quot;Maaf! hanya angka 0 - 100 yang bisa di convert ke huruf&quot;"/>
+                    <assign variable="h" expression="&quot;Maaf! nilai input salah&quot;"/>
                 </then>
                 <else>
                     <if expression="n &gt;= 80">
