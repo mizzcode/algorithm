@@ -8,6 +8,14 @@ Tugas 1
 
 Tugas 2
 1. Buatlah algoritma dan flowchart untuk mengubah angka menjadi huruf
+```
+contoh :
+90-100 = A
+80-89 = B
+70-79 = C
+60-69 = D
+50 = E
+```
 
 <hr>
 
