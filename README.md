@@ -10,11 +10,11 @@ Tugas 2
 1. Buatlah algoritma dan flowchart untuk mengubah angka menjadi huruf
 ```
 contoh :
-90-100 = A
-80-89 = B
-70-79 = C
-60-69 = D
-50 = E
+80-100 = A
+70-79 = B
+60-69 = C
+50-59 = D
+0-49= E
 ```
 
 <hr>
