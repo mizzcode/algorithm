@@ -15,6 +15,9 @@ contoh :
 60-69 = C
 50-59 = D
 0-49= E
+
+tambahan :
+jika lebih dari 100 atau kurang dari 0 maka cetak pesan input salah
 ```
 
 <hr>
