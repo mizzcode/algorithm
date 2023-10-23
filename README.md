@@ -20,6 +20,14 @@ tambahan :
 jika lebih dari 100 atau kurang dari 0 maka cetak pesan input salah
 ```
 
+Tugas 3
+1. Buatlah flowchart untuk memilih menu makanan dengan detail sebagai berikut
+- menu1 : bakso
+- menu2 : soto
+- menu3 : sate
+- menu4 : seblak
+> dengan menginputkan angka pada masing-masing pilihan
+
 <hr>
 
 ## Installation
