@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALPI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-09 11:59:29 AM"/>
+        <attribute name="created" value="QUxQSTtMQVBUT1AtS05WOVRTSDI7MjAyMy0xMC0wODswNjozOTowOCBQTTsyNjc0"/>
+        <attribute name="edited" value="QUxQSTtMQVBUT1AtS05WOVRTSDI7MjAyMy0xMC0wOTsxMTo1OToyOSBBTTs1OzI3NzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NilaiAngka" type="Integer" array="False" size=""/>
+            <declare name="NilaiHuruf" type="String" array="False" size=""/>
+            <input variable="NilaiAngka"/>
+            <if expression="NilaiAngka&gt;100">
+                <then>
+                    <output expression="&quot;Input yang anda masukkan salah&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="NilaiAngka&lt;0">
+                        <then>
+                            <output expression="&quot;Input salah&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="NilaiAngka&gt;=80">
+                        <then>
+                            <output expression="&quot;NilaiHuruf A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="NilaiAngka&gt;=70">
+                                <then>
+                                    <output expression="&quot;NilaiHuruf B&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="NilaiAngka&gt;=60">
+                                        <then>
+                                            <output expression="&quot;NilaiHuruf C&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="NilaiAngka&gt;=50">
+                                                <then>
+                                                    <output expression="&quot;NilaiHuruf D&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="NilaiAngka&gt;=1&amp;&amp;nilaiangka&lt;50">
+                                                        <then>
+                                                            <output expression="&quot;NilaiHuruf E&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
