@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mizz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 09:09:48 PM"/>
+        <attribute name="created" value="TWl6ejtUSElOS1BBRC1UNDgwOzIwMjMtMTEtMDU7MDk6MDE6MjAgUE07MjU3Ng=="/>
+        <attribute name="edited" value="TWl6ejtUSElOS1BBRC1UNDgwOzIwMjMtMTEtMDU7MDk6MDk6NDggUE07MTsyNzAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, jumlah, total" type="Integer" array="False" size=""/>
+            <declare name="rata2" type="Real" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;Masukan nilai ke &quot; &amp; i" newline="True"/>
+                <input variable="n"/>
+                <assign variable="total" expression="total + n"/>
+                <assign variable="jumlah" expression="i"/>
+            </for>
+            <output expression="&quot;jumlah : &quot; &amp; jumlah" newline="True"/>
+            <output expression="&quot;total : &quot; &amp; total" newline="True"/>
+            <assign variable="rata2" expression="total / jumlah"/>
+            <output expression="&quot;rata - rata nilai mahasiswa adalah : &quot; &amp; rata2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

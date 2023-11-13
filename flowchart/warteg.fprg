@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mizz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 11:36:45 PM"/>
+        <attribute name="created" value="TWl6ejtUSElOS1BBRC1UNDgwOzIwMjMtMTEtMDU7MTA6MzE6MTMgUE07MjU3Mw=="/>
+        <attribute name="edited" value="TWl6ejtUSElOS1BBRC1UNDgwOzIwMjMtMTEtMDU7MTE6MzY6NDUgUE07MzsyNjk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;===== SELAMAT DATANG DI WARTEG =====&quot;" newline="True"/>
+            <declare name="i, pilihan, harga, pembayaran, kembalian" type="Integer" array="False" size=""/>
+            <declare name="pesan" type="String" array="False" size=""/>
+            <declare name="menu" type="String" array="True" size="5"/>
+            <assign variable="menu[0]" expression="&quot;AYAM GORENG&quot;"/>
+            <assign variable="menu[1]" expression="&quot;SOTO AYAM&quot;"/>
+            <assign variable="menu[2]" expression="&quot;TIMUN&quot;"/>
+            <assign variable="menu[3]" expression="&quot;TELOR ASIN&quot;"/>
+            <assign variable="menu[4]" expression="&quot;MIE GORENG&quot;"/>
+            <output expression="&quot;===== DAFTAR MENU =====&quot;" newline="True"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="i+1 &amp; &quot;. &quot; &amp; menu[i]" newline="True"/>
+            </for>
+            <output expression="&quot;Mau Menu Nomor Berapa?&quot;" newline="True"/>
+            <input variable="pilihan"/>
+            <if expression="pilihan &gt; 5 || pilihan &lt; 1">
+                <then>
+                    <output expression="&quot;Menu tidak tersedia!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pilihan == 1">
+                        <then>
+                            <output expression="&quot;Harga Ayam Goreng = 10.000&quot;" newline="True"/>
+                            <assign variable="harga" expression="10000"/>
+                            <output expression="&quot;Pesan Ayam Goreng? (Y/N)&quot;" newline="True"/>
+                            <input variable="pesan"/>
+                            <if expression="pesan == &quot;y&quot; || pesan == &quot;Y&quot;">
+                                <then>
+                                    <output expression="&quot;Lakukan Pembayaran&quot;" newline="True"/>
+                                    <input variable="pembayaran"/>
+                                    <if expression="pembayaran &lt; harga">
+                                        <then>
+                                            <output expression="&quot;Uang anda kurang!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="kembalian" expression="pembayaran - harga"/>
+                                            <output expression="&quot;Kembalian Anda = &quot; &amp; kembalian" newline="True"/>
+                                            <output expression="&quot;Pesanan Ayam Goreng Anda Sedang Di Proses. Mohon Tunggu...&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Ok Semoga Harimu Menyenangkan ~~&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="pilihan == 2">
+                                <then>
+                                    <output expression="&quot;Harga Soto Ayam = 6.000&quot;" newline="True"/>
+                                    <assign variable="harga" expression="6000"/>
+                                    <output expression="&quot;Pesan Soto Ayam? (Y/N)&quot;" newline="True"/>
+                                    <input variable="pesan"/>
+                                    <if expression="pesan == &quot;y&quot; || pesan == &quot;Y&quot;">
+                                        <then>
+                                            <output expression="&quot;Lakukan Pembayaran&quot;" newline="True"/>
+                                            <input variable="pembayaran"/>
+                                            <if expression="pembayaran &lt; harga">
+                                                <then>
+                                                    <output expression="&quot;Uang anda kurang!&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="kembalian" expression="pembayaran - harga"/>
+                                                    <output expression="&quot;Kembalian Anda = &quot; &amp; kembalian" newline="True"/>
+                                                    <output expression="&quot;Pesanan Soto Ayam Anda Sedang Di Proses. Mohon Tunggu...&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Ok Semoga Harimu Menyenangkan ~~&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="pilihan == 3">
+                                        <then>
+                                            <output expression="&quot;Harga Timun = 2.000&quot;" newline="True"/>
+                                            <assign variable="harga" expression="2000"/>
+                                            <output expression="&quot;Pesan Timun? (Y/N)&quot;" newline="True"/>
+                                            <input variable="pesan"/>
+                                            <if expression="pesan == &quot;y&quot; || pesan == &quot;Y&quot;">
+                                                <then>
+                                                    <output expression="&quot;Lakukan Pembayaran&quot;" newline="True"/>
+                                                    <input variable="pembayaran"/>
+                                                    <if expression="pembayaran &lt; harga">
+                                                        <then>
+                                                            <output expression="&quot;Uang anda kurang!&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="kembalian" expression="pembayaran - harga"/>
+                                                            <output expression="&quot;Kembalian Anda = &quot; &amp; kembalian" newline="True"/>
+                                                            <output expression="&quot;Pesanan Timun Anda Sedang Di Proses. Mohon Tunggu...&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Ok Semoga Harimu Menyenangkan ~~&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="pilihan == 4">
+                                                <then>
+                                                    <output expression="&quot;Harga Telor Asin = 4.000&quot;" newline="True"/>
+                                                    <assign variable="harga" expression="4000"/>
+                                                    <output expression="&quot;Pesan Telor Asin? (Y/N)&quot;" newline="True"/>
+                                                    <input variable="pesan"/>
+                                                    <if expression="pesan == &quot;y&quot; || pesan == &quot;Y&quot;">
+                                                        <then>
+                                                            <output expression="&quot;Lakukan Pembayaran&quot;" newline="True"/>
+                                                            <input variable="pembayaran"/>
+                                                            <if expression="pembayaran &lt; harga">
+                                                                <then>
+                                                                    <output expression="&quot;Uang anda kurang!&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <assign variable="kembalian" expression="pembayaran - harga"/>
+                                                                    <output expression="&quot;Kembalian Anda = &quot; &amp; kembalian" newline="True"/>
+                                                                    <output expression="&quot;Pesanan Telor Asin Anda Sedang Di Proses. Mohon Tunggu...&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Ok Semoga Harimu Menyenangkan ~~&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Harga Mie Goreng = 6.000&quot;" newline="True"/>
+                                                    <assign variable="harga" expression="6000"/>
+                                                    <output expression="&quot;Pesan Mie Goreng? (Y/N)&quot;" newline="True"/>
+                                                    <input variable="pesan"/>
+                                                    <if expression="pesan == &quot;y&quot; || pesan == &quot;Y&quot;">
+                                                        <then>
+                                                            <output expression="&quot;Lakukan Pembayaran&quot;" newline="True"/>
+                                                            <input variable="pembayaran"/>
+                                                            <if expression="pembayaran &lt; harga">
+                                                                <then>
+                                                                    <output expression="&quot;Uang anda kurang!&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <assign variable="kembalian" expression="pembayaran - harga"/>
+                                                                    <output expression="&quot;Kembalian Anda = &quot; &amp; kembalian" newline="True"/>
+                                                                    <output expression="&quot;Pesanan Mie Goreng Anda Sedang Di Proses. Mohon Tunggu...&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Ok Semoga Harimu Menyenangkan ~~&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mizz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 12:37:54 PM"/>
+        <attribute name="created" value="TWl6ejtNSVpaOzIwMjMtMTAtMjM7MTE6Mjc6NTUgQU07MjAxOQ=="/>
+        <attribute name="edited" value="TWl6ejtNSVpaOzIwMjMtMTAtMjM7MTI6Mzc6NTQgUE07MjsyMTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pilihan" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== MENU ===&quot;" newline="True"/>
+            <output expression="&quot;1. BAKSO&quot;" newline="True"/>
+            <output expression="&quot;2. SOTO&quot;" newline="True"/>
+            <output expression="&quot;3. SATE&quot;" newline="True"/>
+            <output expression="&quot;4. SEBLAK&quot;" newline="True"/>
+            <output expression="&quot;Masukan Nomor Pilihan :&quot;" newline="True"/>
+            <input variable="pilihan"/>
+            <if expression="pilihan &gt; 4 || pilihan &lt;= 0">
+                <then>
+                    <output expression="&quot;MENU TIDAK ADA&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pilihan == 1">
+                        <then>
+                            <output expression="&quot;PILIHAN MENU ANDA : BAKSO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pilihan == 2">
+                                <then>
+                                    <output expression="&quot;MENU PILIHAN ANDA : SOTO&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pilihan == 3">
+                                        <then>
+                                            <output expression="&quot;MENU PILIHAN ANDA : SATE&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;MENU PILIHAN ANDA : SEBLAK&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

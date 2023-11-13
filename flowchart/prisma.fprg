@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mizz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 11:56:31 PM"/>
+        <attribute name="created" value="TWl6ejtUSElOS1BBRC1UNDgwOzIwMjMtMTEtMDU7MDc6Mjk6NDEgUE07MjU4Nw=="/>
+        <attribute name="edited" value="TWl6ejtUSElOS1BBRC1UNDgwOzIwMjMtMTEtMDU7MTE6NTY6MzEgUE07MjsyNjkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, angka, sisaBagi, i, counter" type="Integer" array="False" size=""/>
+            <assign variable="angka" expression="1"/>
+            <input variable="n"/>
+            <while expression="n &gt; 0">
+                <assign variable="counter" expression="0"/>
+                <for variable="i" start="1" end="angka" direction="inc" step="1">
+                    <assign variable="sisaBagi" expression="angka % i"/>
+                    <if expression="sisaBagi == 0">
+                        <then>
+                            <assign variable="counter" expression="counter + 1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="counter == 2">
+                    <then>
+                        <output expression="angka" newline="True"/>
+                        <assign variable="n" expression="n - 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="angka" expression="angka + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
