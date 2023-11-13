@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mizz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 09:45:24 PM"/>
+        <attribute name="created" value="TWl6ejtNSVpaOzIwMjMtMTAtMDM7MDg6MzE6MzIgUE07MjAyOA=="/>
+        <attribute name="edited" value="TWl6ejtNSVpaOzIwMjMtMTAtMDM7MDk6NDU6MjQgUE07MzsyMTQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <declare name="z" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <input variable="z"/>
+            <if expression="x &lt; y and&#13;&#10; x &lt; z">
+                <then>
+                    <output expression="x" newline="True"/>
+                </then>
+                <else>
+                    <if expression="y &lt; x and y &lt; z">
+                        <then>
+                            <output expression="y" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="z" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
