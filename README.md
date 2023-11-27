@@ -31,7 +31,7 @@ Tugas 3
 <hr>
 
 ## Installation
-1. Clone the repository <br> ```git clone git@github.com:mizzcode/algorithm.git```
+1. Clone the repository <br> ```git clone https://github.com/mizzcode/algorithm.git```
 2. Pindah ke folder yang sudah di clone <br> ```cd algorithm```
 3. Untuk compile file gunakan perintah <br> ```g++ -o namaprogram namafile.cpp```
 4. Eksekusi hasil compile berupa file.exe <br> ```./namaprogram```
