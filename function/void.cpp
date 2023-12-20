@@ -8,5 +8,5 @@ void sayHello (string name)
 
 int main ()
 {
-    sayHello("Riyan");
+    sayHello("Mizz!");
 }
