@@ -13,5 +13,6 @@ int main ()
         cout << "Nilai siswa ke-" << n+1 << ": " << nilai_siswa[n] << endl;
     }
 
-    cout <<  "Total nilai siswa adalah " << result;
+    cout <<  "Total seluruh nilai siswa adalah " << result << endl;
+    #include "test.h"
 }
