@@ -76,8 +76,11 @@ int main() {
             }
         } else if (no == 4) {
             break;
+        } else if (cin.fail()) {
+            cerr << "Pilihan hanya boleh angka atau number!" << endl;
+            break;
         } else {
-            cout << "Pilihan sulit dimengerti semoga harimu menyenangkan!";
+            cout << "Pilihan sulit dimengerti semoga harimu menyenangkan!" << endl;
         }
     }
 
