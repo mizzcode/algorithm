@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -6,6 +7,7 @@ int main() {
     // declare variable
     int no;
     int tagihan = 0;
+    string daftarPesanan = "";
     string confirm;
 
     // Perulangan While
@@ -36,6 +38,8 @@ int main() {
 
             if (no == 1) {
                 tagihan += 15000;
+                cout << "Anda Pesan Nasi Goreng!" << endl;
+                daftarPesanan += "Nasi Goreng (Rp 15.000) = 15000\n";
             }
         } else if (no == 2) {
             cout << "--------------------" << endl;
@@ -53,9 +57,16 @@ int main() {
 
             if (no == 1) {
                 tagihan += 5000;
+                cout << "Anda Pesan Es Teh Manis" << endl;
+                daftarPesanan += "Es Teh Manis (Rp 5.000) = 5000\n";
             }
         } else if (no == 3) {
-            cout << "Total Bayar : " << tagihan << endl;
+            cout << "--------------------" << endl;
+            cout << "DAFTAR PESANAN" << endl;
+            cout << "--------------------" << endl;
+            cout << daftarPesanan;
+            cout << "--------------------" << endl;
+            cout << "Total Bayar : " <<  tagihan << endl;
             cout << "Kembali ke Menu Utama (Y/T) : ";
 
             cin >> confirm;
