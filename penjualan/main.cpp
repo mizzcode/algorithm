@@ -6,7 +6,6 @@ int main() {
     // declare variable
     int no;
     int tagihan = 0;
-    int panjangArray;
     string confirm;
 
     // Perulangan While
