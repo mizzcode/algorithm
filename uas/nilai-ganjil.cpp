@@ -8,7 +8,7 @@ int main() {
 
     // user input 10 nilai
     for (int i = 0; i < 10; i++) {
-        cout << "Masukkan nilai indeks ke-" << i << " : ";
+        cout << "Masukkan nilai ke-" << i+1 << " : ";
         cin >> nilai[i];
 
         ganjil = (nilai[i] % 2 == 1);
